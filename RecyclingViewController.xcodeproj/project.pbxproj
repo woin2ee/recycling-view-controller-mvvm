@@ -14,6 +14,9 @@
 		E8DA80BF288A9EDD00CC4624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DA80BE288A9EDD00CC4624 /* Assets.xcassets */; };
 		E8DA80C2288A9EDD00CC4624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DA80C0288A9EDD00CC4624 /* LaunchScreen.storyboard */; };
 		E8DA80CF288A9F2400CC4624 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA80CE288A9F2400CC4624 /* MainViewModel.swift */; };
+		E8DA80D3288AA09200CC4624 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA80D2288AA09200CC4624 /* CounterViewController.swift */; };
+		E8DA80D5288AA09D00CC4624 /* Counter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DA80D4288AA09D00CC4624 /* Counter.storyboard */; };
+		E8DA80DA288AA94C00CC4624 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA80D9288AA94C00CC4624 /* CounterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		E8DA80C1288A9EDD00CC4624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8DA80C3288A9EDD00CC4624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8DA80CE288A9F2400CC4624 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E8DA80D2288AA09200CC4624 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		E8DA80D4288AA09D00CC4624 /* Counter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Counter.storyboard; sourceTree = "<group>"; };
+		E8DA80D9288AA94C00CC4624 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,7 @@
 				E8DA80BE288A9EDD00CC4624 /* Assets.xcassets */,
 				E8DA80C3288A9EDD00CC4624 /* Info.plist */,
 				E8DA80C0288A9EDD00CC4624 /* LaunchScreen.storyboard */,
-				E8DA80CA288A9EEB00CC4624 /* Scenes */,
+				E8DA80CA288A9EEB00CC4624 /* Presentation */,
 			);
 			path = RecyclingViewController;
 			sourceTree = "<group>";
@@ -76,21 +82,22 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		E8DA80CA288A9EEB00CC4624 /* Scenes */ = {
+		E8DA80CA288A9EEB00CC4624 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				E8DA80CB288A9EF200CC4624 /* Main */,
+				E8DA80D0288AA07300CC4624 /* Common */,
+				E8DA80CB288A9EF200CC4624 /* MainScene */,
 			);
-			path = Scenes;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
-		E8DA80CB288A9EF200CC4624 /* Main */ = {
+		E8DA80CB288A9EF200CC4624 /* MainScene */ = {
 			isa = PBXGroup;
 			children = (
 				E8DA80CD288A9EF800CC4624 /* View */,
 				E8DA80CC288A9EF500CC4624 /* ViewModel */,
 			);
-			path = Main;
+			path = MainScene;
 			sourceTree = "<group>";
 		};
 		E8DA80CC288A9EF500CC4624 /* ViewModel */ = {
@@ -108,6 +115,40 @@
 				E8DA80BB288A9EDC00CC4624 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E8DA80D0288AA07300CC4624 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA80D6288AA8D300CC4624 /* Counter */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E8DA80D1288AA07800CC4624 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA80D2288AA09200CC4624 /* CounterViewController.swift */,
+				E8DA80D4288AA09D00CC4624 /* Counter.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8DA80D6288AA8D300CC4624 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA80D1288AA07800CC4624 /* View */,
+				E8DA80D7288AA91000CC4624 /* ViewModel */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		E8DA80D7288AA91000CC4624 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA80D9288AA94C00CC4624 /* CounterViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8DA80C2288A9EDD00CC4624 /* LaunchScreen.storyboard in Resources */,
+				E8DA80D5288AA09D00CC4624 /* Counter.storyboard in Resources */,
 				E8DA80BF288A9EDD00CC4624 /* Assets.xcassets in Resources */,
 				E8DA80BD288A9EDC00CC4624 /* Main.storyboard in Resources */,
 			);
@@ -183,8 +225,10 @@
 			files = (
 				E8DA80BA288A9EDC00CC4624 /* MainViewController.swift in Sources */,
 				E8DA80B6288A9EDC00CC4624 /* AppDelegate.swift in Sources */,
+				E8DA80D3288AA09200CC4624 /* CounterViewController.swift in Sources */,
 				E8DA80B8288A9EDC00CC4624 /* SceneDelegate.swift in Sources */,
 				E8DA80CF288A9F2400CC4624 /* MainViewModel.swift in Sources */,
+				E8DA80DA288AA94C00CC4624 /* CounterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

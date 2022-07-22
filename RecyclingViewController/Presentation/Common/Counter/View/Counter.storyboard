@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Counter View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CounterViewController" id="Y6W-OH-hqX" customClass="CounterViewController" customModule="RecyclingViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWP-YR-dnM">
+                                <rect key="frame" x="202" y="43.5" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD2-zl-ZSJ">
+                                <rect key="frame" x="329" y="36.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KF6-oi-1tx"/>
+                                    <constraint firstAttribute="width" constant="35" id="y3n-LV-ERu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="+"/>
+                                <connections>
+                                    <action selector="didTapPlusButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uKk-jO-7Tn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ii-Sy-1Ic">
+                                <rect key="frame" x="50" y="36.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="DeI-yZ-igp"/>
+                                    <constraint firstAttribute="height" constant="35" id="lXR-s3-DqR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="-"/>
+                                <connections>
+                                    <action selector="didTapMinusButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JEC-2L-MB8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FW7-cc-tyA"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="gWP-YR-dnM" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="5DM-Hc-usV"/>
+                            <constraint firstItem="0Ii-Sy-1Ic" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="50" id="Tlv-kL-8s4"/>
+                            <constraint firstAttribute="trailing" secondItem="UD2-zl-ZSJ" secondAttribute="trailing" constant="50" id="VJQ-vq-EaY"/>
+                            <constraint firstItem="gWP-YR-dnM" firstAttribute="centerY" secondItem="0Ii-Sy-1Ic" secondAttribute="centerY" id="dij-cU-mW0"/>
+                            <constraint firstItem="gWP-YR-dnM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tIn-6n-A5q"/>
+                            <constraint firstItem="UD2-zl-ZSJ" firstAttribute="centerY" secondItem="0Ii-Sy-1Ic" secondAttribute="centerY" id="u7I-kc-Awr"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="108"/>
+                    <connections>
+                        <outlet property="countLabel" destination="gWP-YR-dnM" id="Eug-6v-3Sv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="-178.125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
