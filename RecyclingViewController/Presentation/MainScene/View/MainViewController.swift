@@ -14,5 +14,7 @@ final class MainViewController: UIViewController {
     }
     
     @IBAction func didTapButton(_ sender: Any) {
+        let secondVC = SecondViewController.init()
+        present(secondVC, animated: true)
     }
 }

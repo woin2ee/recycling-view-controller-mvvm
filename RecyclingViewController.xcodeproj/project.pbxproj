@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E86D4523288BF261006B31D6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86D4522288BF261006B31D6 /* SecondViewController.swift */; };
+		E86D4528288BF27C006B31D6 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86D4527288BF27C006B31D6 /* SecondViewModel.swift */; };
 		E8DA80B6288A9EDC00CC4624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA80B5288A9EDC00CC4624 /* AppDelegate.swift */; };
 		E8DA80B8288A9EDC00CC4624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA80B7288A9EDC00CC4624 /* SceneDelegate.swift */; };
 		E8DA80BA288A9EDC00CC4624 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA80B9288A9EDC00CC4624 /* MainViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E86D4522288BF261006B31D6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E86D4527288BF27C006B31D6 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		E8DA80B2288A9EDC00CC4624 /* RecyclingViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecyclingViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DA80B5288A9EDC00CC4624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8DA80B7288A9EDC00CC4624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E86D451F288BF23E006B31D6 /* SecondScene */ = {
+			isa = PBXGroup;
+			children = (
+				E86D4521288BF24D006B31D6 /* View */,
+				E86D4520288BF249006B31D6 /* ViewModel */,
+			);
+			path = SecondScene;
+			sourceTree = "<group>";
+		};
+		E86D4520288BF249006B31D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E86D4527288BF27C006B31D6 /* SecondViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E86D4521288BF24D006B31D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E86D4522288BF261006B31D6 /* SecondViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E8DA80A9288A9EDC00CC4624 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +116,7 @@
 			children = (
 				E8DA80D0288AA07300CC4624 /* Common */,
 				E8DA80CB288A9EF200CC4624 /* MainScene */,
+				E86D451F288BF23E006B31D6 /* SecondScene */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -223,10 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86D4528288BF27C006B31D6 /* SecondViewModel.swift in Sources */,
 				E8DA80BA288A9EDC00CC4624 /* MainViewController.swift in Sources */,
 				E8DA80B6288A9EDC00CC4624 /* AppDelegate.swift in Sources */,
 				E8DA80D3288AA09200CC4624 /* CounterViewController.swift in Sources */,
 				E8DA80B8288A9EDC00CC4624 /* SceneDelegate.swift in Sources */,
+				E86D4523288BF261006B31D6 /* SecondViewController.swift in Sources */,
 				E8DA80CF288A9F2400CC4624 /* MainViewModel.swift in Sources */,
 				E8DA80DA288AA94C00CC4624 /* CounterViewModel.swift in Sources */,
 			);

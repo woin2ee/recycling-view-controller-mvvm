@@ -25,11 +25,10 @@
                                     <segue destination="4Td-OS-FTy" kind="embed" id="q24-Sr-991"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfN-bD-xRg">
-                                <rect key="frame" x="174" y="433" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfN-bD-xRg">
+                                <rect key="frame" x="153" y="691" width="108" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Second View"/>
                                 <connections>
                                     <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yov-fi-BFW"/>
                                 </connections>
@@ -41,6 +40,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W9d-py-TbG" secondAttribute="bottom" id="XOm-mJ-oGr"/>
                             <constraint firstItem="W9d-py-TbG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nkk-be-GQY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W9d-py-TbG" secondAttribute="trailing" id="uHA-2Y-PHt"/>
+                            <constraint firstItem="FfN-bD-xRg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yDi-7U-hL8"/>
+                            <constraint firstItem="W9d-py-TbG" firstAttribute="top" secondItem="FfN-bD-xRg" secondAttribute="bottom" constant="40" id="zuI-m5-Xpu"/>
                         </constraints>
                     </view>
                 </viewController>
