@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import Combine
+
+final class MainViewModel {
+    
+    @Published var isShowing: Bool = true
+    
+    func didTapToggleViewSwitch() {
+        isShowing.toggle()
+    }
+}
